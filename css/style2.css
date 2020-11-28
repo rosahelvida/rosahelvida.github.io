@@ -1,0 +1,260 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	font-family: Raleway;
+	background-color: #f4f4f4;
+}
+
+.container{
+	width: 82%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.mobile-menu{
+	float: right;
+	display: none;
+	padding: 13px;
+}
+
+.mobile-menu:hover{
+	cursor: pointer;
+}
+
+#check{
+	display: none;
+}
+
+.sidebar{
+	position: fixed;
+	color: #1a1c20;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width: 250px;
+	background-color: rgba(26, 28, 32, .9);
+	transition: 0.3s;
+}
+
+.sidebar ul li a{
+	color: #FFF;
+}
+
+.sidebar ul li{
+	padding: 20px;
+	transition: 0.3s;
+	transition-property: background-color;
+}
+
+.sidebar ul li:hover{
+	background-color: #f0a500;
+}
+
+#check:checked ~ .sidebar {
+	left: 0;
+}
+
+.back button{
+	color: #f4f4f4;
+	background-color: #1a1c20;
+	width: 70px;
+	height: 28px;
+	border-radius: 5px;
+	border: none;
+	font-family: Raleway		;
+	font-size: 15px;
+	margin-top: 0px;
+	margin-left: 130px; 
+	text-transform: uppercase;
+}
+
+header{
+	background: #1a1c20;
+	color: #FFF;
+	padding-top: 5px;
+	min-height: 70px; 
+}
+
+header #branding h1{
+	float: left;
+}
+
+header nav{
+	float: right;
+	margin-top: 13px;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0px 20px;
+}
+
+header a{
+	color: #f4f4f4;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header button{
+	color: #f4f4f4;
+	background-color: #cf7500;
+	width: 90px;
+	height: 28px;
+	border-radius: 5px;
+	border: none;
+	font-family: Raleway		;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: -4px;
+}
+
+header #branding, header .active a{
+	color: #fff;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #f0a500;
+	font-weight: bold;
+}
+
+
+#newsletter{
+	padding: 10px;
+	color: #000;
+}
+
+#newsletter h1{
+	float: left;
+}
+
+
+.buttonsubs{
+	color: #FFF;
+	background-color: #1a1c20;
+	width: 120px;
+	height: 29px;
+	border-radius: 5px;
+	border: none;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding-left: 17px;
+	padding-right: 36px;
+}
+
+button:hover{
+	color: #f0a500;
+	font-weight: bold;
+}
+
+#boxes .container{
+	margin-top: 20px;
+	margin-left: 220px;
+}
+
+#boxes .box{
+	text-align: center;
+	width: 80%;
+	height: 80%;		
+	padding: 20px;
+	margin-bottom: 60px;	
+	background-color: #b2deec;
+	border-radius: 20px;
+}
+
+#boxes .box img{
+	margin: 40px 20px 0px 20px;
+	position: center;
+	width: 120px;
+}
+
+#boxes .box p{
+	margin: 30px 80px 40px 80px;
+	font-size: 17px;
+	text-align: justify;
+}
+
+#boxes .box h3{
+	margin: 30px 80px 5px 80px;
+	font-size: 17px;
+	text-align: justify;
+}
+
+#boxes .box ul{
+	margin: 0px 80px 35px 80px;
+	font-size: 17px;
+	text-align: justify;
+}
+
+#boxes .box ol{
+	margin: 0px 80px 35px 80px;
+	font-size: 17px;
+	text-align: justify;
+}
+
+.summary summary{
+	font-size: 17px;
+	margin: 0px 80px 35px 80px;
+	text-align: left;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.summary ul li{
+	font-size: 17px;
+	text-align: justify;
+}
+
+footer{
+	padding: 8px;
+	margin-top: 20px;
+	color: #fff;
+	background: #1a1c20;
+	text-align: center;
+	font-family: Montserrat;
+}
+
+@media(max-width: 768px){
+	.mobile-menu{
+		display: block;
+	}
+
+	.sidebar{
+		width: 190px;
+		margin-left: -40px;
+	}
+
+	header ul{
+		display: none;
+		text-decoration: none;
+	}
+
+	header #branding,
+	header nav,
+	header nav li
+	#newsletter h1
+	#newsletter form
+	#boxes{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	#boxes .container{
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+	#boxes .box p , ul li,
+	.summary summary ul li,
+	p h3,
+	.summary summary,
+	ol li,
+	ul li{
+		font-size: 13px;
+		margin: 10px 10px 0px 10px;
+	}
+}
